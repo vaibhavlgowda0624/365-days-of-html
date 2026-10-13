@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Survey</title>
+</head>
+<body>
+    <h1>Developer Survey</h1>
+
+    <form>
+        <fieldset>
+            <legend>Experience</legend>
+
+            <label for="years">Years of coding:</label>
+            <input id="years" name="years"
+                   type="number" min="0" max="60">
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferred area</legend>
+
+            <label>
+                <input type="radio" name="area" value="web">
+                Web Development
+            </label>
+
+            <label>
+                <input type="radio" name="area" value="security">
+                Cybersecurity
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Survey</button>
+    </form>
+</body>
+</html>
