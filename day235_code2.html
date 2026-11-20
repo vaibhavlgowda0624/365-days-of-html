@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2>Character Counter</h2>
+
+  <textarea id="message" maxlength="100"></textarea>
+
+  <p>Characters: <span id="count">0</span>/100</p>
+
+  <script>
+    const input = document.getElementById("message");
+    const count = document.getElementById("count");
+
+    input.addEventListener("input", () => {
+      count.textContent = input.value.length;
+    });
+  </script>
+</body>
+</html>
