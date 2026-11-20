@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+  <h2>Simple Calculator</h2>
+
+  <input type="number" id="first" placeholder="First number">
+  <input type="number" id="second" placeholder="Second number">
+
+  <button onclick="calculate()">Add</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculate() {
+      const a = Number(document.getElementById("first").value);
+      const b = Number(document.getElementById("second").value);
+
+      document.getElementById("result").textContent =
+        "Result: " + (a + b);
+    }
+  </script>
+</body>
+</html>
