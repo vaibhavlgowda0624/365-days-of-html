@@ -1,0 +1,21 @@
+<form>
+  <h2>Upload Dataset</h2>
+
+  <label for="dataset">Select CSV:</label>
+  <input
+    id="dataset"
+    type="file"
+    accept=".csv"
+    required
+  >
+
+  <label for="analysis">Analysis Type:</label>
+  <select id="analysis">
+    <option>Average</option>
+    <option>Maximum</option>
+    <option>Minimum</option>
+    <option>Grouping</option>
+  </select>
+
+  <button type="submit">Analyze Dataset</button>
+</form>
